@@ -39,9 +39,6 @@ passport.serializeUser((user, done) => {
 
 //read session from the cookie
 passport.deserializeUser((id, done) => {
-	// User.findById(id).then( user => {
-	// 	done(null, user);
-	// });
 	done(null, id);
 });
 
